@@ -1,0 +1,128 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #333; 
+    z-index: 1000;
+    height: 5vh;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.navItem {
+    margin: 0 16px;
+    font-size: 2vh;
+    padding: 1vh 0;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, font-size 0.3s;
+    border-bottom: 2px solid transparent; 
+}
+
+.link:hover {
+    color: rgba(0, 255, 204, 0.8); 
+}
+
+.activeLink {
+    color: #00ffcc;
+    font-size: 24px; 
+    background-color: #333;
+    padding: 2vh 5vh;
+    clip-path: polygon(5.5vh 0, calc(100% - 5.5vh) 0, 100% 5.5vh, 100% calc(100% - 5.5vh), calc(100% - 5.5vh) 100%, 5.5vh 100%, 0 calc(100% - 5.5vh), 0 5vh);;
+    transition: color 0.3s, font-size 0.3s, padding 0.3s; 
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.8), 0 0 10px rgba(0, 255, 204, 0.6); 
+    animation: pulse 1.8s infinite; 
+}
+
+.activeLink:hover {
+    color: #00ffcc; 
+    text-shadow: 0 0 8px rgba(0, 255, 204, 1), 0 0 15px rgba(0, 255, 204, 0.6); 
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 5px rgba(0, 255, 204, 0.8), 0 0 10px rgba(0, 255, 204, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(0, 255, 204, 1), 0 0 30px rgba(0, 255, 204, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(0, 255, 204, 0.8), 0 0 10px rgba(0, 255, 204, 0.6);
+    }
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    background-color: #333;
+    clip-path: polygon(0 0, calc(100% - 1vh) 0, 100% 1vh, 100% calc(100% - 1vh), calc(100% - 1vh) 100%, 1vh 100%, 0 calc(100% - 1vh), 0 1vh);
+    padding: 1vh;
+    align-items: center;
+    justify-content: center;
+    width: 5vh; 
+    height: 5vh; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 1001; 
+}
+
+.hamburger div {
+    background-color: white; 
+    height: 6vh; 
+    width: 100%; 
+    margin: 0.4vh 0; 
+}
+
+.hamburger:hover div {
+    background-color: rgba(0, 255, 204, 0.8); 
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; 
+        
+    }
+
+    .header {
+        width: 45vw; 
+        background: none;
+    }
+
+    .navList {
+        flex-direction: column; 
+        display: none; 
+        position: absolute;
+        top: 8vh; 
+        left: 0;
+        right: 0;
+        background-color: #333; 
+        padding: 10px 0; 
+        z-index: 1000;
+        background: linear-gradient(to left, rgba(51, 51, 51, 0.95), rgba(51, 51, 51, 1));
+    }
+
+    .activeLink {
+        color: #00ffcc;
+        font-size: 12px; 
+        background-color: #333;
+        padding: 2vh 4vh;
+        clip-path: polygon(0.01vw 0, calc(100% - 0.01vw) 0, 100% 0.01vw, 100% calc(100% - 0.01vw), calc(100% - 0.01vw) 100%, 0.01vw 100%, 0 calc(100% - 0.01vw), 0 5vh);;
+        transition: color 0.3s, font-size 0.3s, padding 0.3s; 
+        text-shadow: 0 0 5px rgba(0, 255, 204, 0.8), 0 0 10px rgba(0, 255, 204, 0.6); 
+        animation: pulse 1.5s infinite; 
+    }
+    .navList.show {
+        display: flex; 
+    }
+}

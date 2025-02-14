@@ -1,0 +1,70 @@
+.ticket {
+    background-color: rgba(77, 77, 77, 0.4); /* Semi-transparent black background */
+    border: 2px solid white;
+    border-radius: 3vh; /* Beveled corners */
+    padding: 20px;
+    margin: 1vh;
+    color: white; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vh; /* Fixed width for tickets */
+    clip-path: polygon(0 3vh, 3vh 0, calc(100% - 3vh) 0, 100% 3vh, 100% calc(100% - 3vh), calc(100% - 3vh) 100%, 3vh 100%, 0 calc(100% - 3vh));
+    border: none;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.ticket:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.sold-out {
+    opacity: 0.5; /* Reduced opacity for sold-out tickets */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+.sold-out:hover {
+    transform: none; /* Disable scaling on hover for sold-out tickets */
+}
+
+.buttonBuy {
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: #ff4081;
+    border: none;
+
+    cursor: pointer;
+    margin: 3vh;
+    clip-path: polygon(0 1vh, 1vh 0, calc(100% - 1vh) 0, 100% 1vh, 100% calc(100% - 1vh), calc(100% - 1vh) 100%, 1vh 100%, 0 calc(100% - 1vh));
+    font-family: 'Impact', sans-serif; /* Set the font family to Impact */
+    font-weight: bold; /* Make the text bold */
+    font-size: 3vh;
+}
+
+.buttonBuy:disabled {
+    background-color: gray; /* Gray out the button when disabled */
+    cursor: not-allowed; /* Show not-allowed cursor */
+}
+
+.buttonBuy:hover {
+    transform: scale(1.05);
+}
+/* Center the dropdowns for 2 Day ticket */
+.dropdown2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the dropdowns */
+    gap: 1vh; /* Add some spacing between the dropdowns */
+}
+
+
+
+select {
+    width: 100%; /* Full width of the container */
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}

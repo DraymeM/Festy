@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+
+.title {
+    margin-top: 10vh;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.soundWaveContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    width: 100%;
+    max-width: 80vw;
+    height: 100px; 
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.soundWaveBar {
+    width: 30px; 
+    background-color: #ff4081;
+    margin: 0 5px; 
+    animation: soundWaveAnimation 1s ease-in-out infinite; 
+}
+
+
+@keyframes soundWaveAnimation {
+    0%, 100% { height: 20px; }
+    50% { height: 80px; } 
+}
+
+.subTitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.highlightsGrid {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+}
+
+.highlightItem {
+    margin: 10px;
+    flex: 0 0 auto; 
+    width: 30vh; 
+    height: 30vh; 
+}
+
+.buttonB {
+    display: inline-block;
+    padding: 2vh 2vh;
+    font-size: 5vh;
+    font-family: 'Impact', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #ff4081;
+    text-decoration: none;
+    clip-path: polygon(0 1vh, 1vh 0, calc(100% - 1vh) 0, 100% 1vh, 100% calc(100% - 1vh), calc(100% - 1vh) 100%, 1vh 100%, 0 calc(100% - 1vh));
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.3);
+    white-space: nowrap;
+    animation: pulse 1s infinite; 
+}
+
+.buttonB {
+    display: inline-block;
+    padding: 2vh 4vh;
+    font-size: 5vh;
+    color: white;
+    background-color: #ff4081;
+    text-decoration: none;
+    clip-path: polygon(0 2vh, 2vh 0, calc(100% - 2vh) 0, 100% 2vh, 100% calc(100% - 2vh), calc(100% - 2vh) 100%, 2vh 100%, 0 calc(100% - 2vh));
+    transition: background-color 0.3s, box-shadow 0.01s;
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.3);
+    white-space: nowrap;
+    animation: growShrink 2s infinite;
+}
+
+.buttonB:hover {
+    transform: scale(1.1); 
+    animation: none; 
+    color: rgb(0, 255, 204);
+    border-radius: 2vh;
+}
+
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(0.8); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+}
+
+
+

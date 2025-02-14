@@ -1,0 +1,24 @@
+/* SoundWave.css */
+.soundWaveContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align bars to the bottom */
+    width: 100%;
+    max-width: 80vw; /* Adjust to fit your layout */
+    height: 100px; /* Height of the sound wave */
+    overflow: hidden;
+    margin: 20px 0; /* Margin around the sound wave */
+}
+
+.soundWaveBar {
+    width: 30px; /* Width of each bar */
+    background-color: #ff4081;
+    margin: 0 5px; /* Space between bars */
+    animation: soundWaveAnimation 1s ease-in-out infinite; /* Animation properties */
+}
+
+/* Pulsating Effect */
+@keyframes soundWaveAnimation {
+    0%, 100% { height: 20px; }
+    50% { height: 80px; } /* Max height for the pulsating effect */
+}
