@@ -27,7 +27,7 @@ function LoginForm() {
                 console.log("Login successful:", data.message);
                 const userId = data.userId; // Extract userId from response
                 saveUserIdToContext(userId); // Save it to your auth context or state
-                navigate('/account-details'); // Navigate to account page
+                navigate('/festy/account-details'); // Navigate to account page
             }
             else {
                 setErrorText(data.message || "Login failed. Please try again.");
@@ -68,7 +68,7 @@ function LoginForm() {
                 <button type="submit" style={styles.button}>Login</button>
                 <div style={styles.linkContainer}>
                     <p style={styles.linkText}>
-                        Don't have an account? <Link to="/register" style={styles.link}>Register here</Link>
+                        Don't have an account? <Link to="/festy/register" style={styles.link}>Register here</Link>
                     </p>
                 </div>
             </form>

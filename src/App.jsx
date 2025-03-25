@@ -23,16 +23,16 @@ function App() {
             <Router>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<MainLandingPage />} />
-                    <Route path="/performers" element={<PerformersPage />} />
-                    <Route path="/performers/:id" element={<PerformerDetails performers={performers} />} />
-                    <Route path="/tickets" element={<Tickets />} />
-                    <Route path="/programs" element={<ProgramsContainer />} />
-                    <Route path="/aboutus" element={<AboutUsPage />} />
-                    <Route path="/cats" element={<CatsPage />} />
-                    <Route path="/login" element={<LoginForm />} />
-                    <Route path="/register" element={<RegisterForm />} /> 
-                    <Route path="/account-details" element={<AccountDetails />} /> 
+                    <Route path="/festy" element={<MainLandingPage />} />
+                    <Route path="/festy/performers" element={<PerformersPage />} />
+                    <Route path="/festy/performers/:id" element={<PerformerDetails performers={performers} />} />
+                    <Route path="/festy/tickets" element={<Tickets />} />
+                    <Route path="/festy/programs" element={<ProgramsContainer />} />
+                    <Route path="/festy/aboutus" element={<AboutUsPage />} />
+                    <Route path="/festy/cats" element={<CatsPage />} />
+                    <Route path="/festy/login" element={<LoginForm />} />
+                    <Route path="/festy/register" element={<RegisterForm />} /> 
+                    <Route path="/festy/account-details" element={<AccountDetails />} /> 
                 </Routes>
             </Router>
         </AuthProvider>

@@ -54,8 +54,8 @@ function Header() {
                 <ul ref={navListRef} className={`navList ${showNav ? 'show' : ''}`}>
                     <li className="navItem">
                         <Link
-                            to="/"
-                            className={location.pathname === '/' ? 'activeLink' : 'link'}
+                            to="/festy"
+                            className={location.pathname === '/festy' ? 'activeLink' : 'link'}
                             onClick={handleClick}
                         >
                             Home
@@ -63,8 +63,8 @@ function Header() {
                     </li>
                     <li className="navItem">
                         <Link
-                            to="/programs"
-                            className={location.pathname === '/programs' ? 'activeLink' : 'link'}
+                            to="/festy/programs"
+                            className={location.pathname === '/festy/programs' ? 'activeLink' : 'link'}
                             onClick={handleClick}
                         >
                             Programs
@@ -72,8 +72,8 @@ function Header() {
                     </li>
                     <li className="navItem">
                         <Link
-                            to="/performers"
-                            className={location.pathname === '/performers' ? 'activeLink' : 'link'}
+                            to="/festy/performers"
+                            className={location.pathname === '/festy/performers' ? 'activeLink' : 'link'}
                             onClick={handleClick}
                         >
                             Performers
@@ -81,8 +81,8 @@ function Header() {
                     </li>
                     <li className="navItem">
                         <Link
-                            to="/tickets"
-                            className={location.pathname === '/tickets' ? 'activeLink' : 'link'}
+                            to="/festy/tickets"
+                            className={location.pathname === '/festy/tickets' ? 'activeLink' : 'link'}
                             onClick={handleClick}
                         >
                             Tickets
@@ -90,8 +90,8 @@ function Header() {
                     </li>
                     <li className="navItem">
                         <Link
-                            to="/cats"
-                            className={location.pathname === '/cats' ? 'activeLink' : 'link'}
+                            to="/festy/cats"
+                            className={location.pathname === '/festy/cats' ? 'activeLink' : 'link'}
                             onClick={handleClick}
                         >
                             Cats
@@ -99,8 +99,8 @@ function Header() {
                     </li>
                     <li className="navItem">
                         <Link
-                            to="/aboutus"
-                            className={location.pathname === '/aboutus' ? 'activeLink' : 'link'}
+                            to="/festy/aboutus"
+                            className={location.pathname === '/festy/aboutus' ? 'activeLink' : 'link'}
                             onClick={handleClick}
                         >
                             About Us
@@ -109,16 +109,16 @@ function Header() {
                     <li className="navItem">
                         {userId ? (
                             <Link
-                                to="/account-details"
-                                className={location.pathname === '/account-details' ? 'activeLink' : 'link'}
+                                to="/festy/account-details"
+                                className={location.pathname === '/festy/account-details' ? 'activeLink' : 'link'}
                                 onClick={handleClick}
                             >
                                 Account
                             </Link>
                         ) : (
                             <Link
-                                to="/login"
-                                className={location.pathname === '/login' ? 'activeLink' : 'link'}
+                                to="/festy/login"
+                                className={location.pathname === '/festy/login' ? 'activeLink' : 'link'}
                                 onClick={handleClick}
                             >
                                 Login

@@ -16,7 +16,7 @@ function PerformerDetails({ performers }) {
     return (
         <div style={styles.container}>
             <button
-                onClick={() => navigate('/performers')}
+                onClick={() => navigate('/festy/performers')}
                 style={{
                     ...styles.backButton,
                     ...(isHovered ? styles.backButtonHover : {}),

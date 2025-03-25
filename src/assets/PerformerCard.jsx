@@ -4,7 +4,7 @@ import './PerformerCard.css'; // Import the CSS file
 
 function PerformerCard({ name, imageUrl, description, id, sample }) {
     return (
-        <Link to={`/performers/${id}`} className="card">
+        <Link to={`/festy/performers/${id}`} className="card">
             <div className="image-container"> {/* Add a container around the image */}
                 <img src={imageUrl} alt={name} className="card-image" />
             </div>
