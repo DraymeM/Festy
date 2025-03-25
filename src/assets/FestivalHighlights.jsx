@@ -47,9 +47,9 @@ function FestivalHighlights({ title, image }) {
     // Update the handleClick to route to /cats if the title is "Cats"
     const handleClick = () => {
         if (title === 'Cats') {
-            navigate('/cats');
+            navigate('/festy/cats');
         } else {
-            navigate('/programs');
+            navigate('/festy/programs');
         }
     };
 

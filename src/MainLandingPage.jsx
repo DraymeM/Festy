@@ -41,7 +41,7 @@ function MainLandingPage() {
                 ))}
             </div>
             
-            <a href="/tickets" className="buttonB">
+            <a href="/festy/tickets" className="buttonB">
                 Buy Tickets Now
             </a>
 
