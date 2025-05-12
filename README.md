@@ -2,6 +2,11 @@
 
 **Festy** is a sleek, minimal event discovery web app where users can shop for tickets, view event performers, and listen to short mashup previews — all in one place. Designed for fast, user-friendly access to key event details, Festy removes the clutter and focuses on what matters most: the vibe.
 
+
+## 🌐 Live Demo
+
+Check out the live demo: [Insect-Betyár Live Demo](https://danielmarkus.web.elte.hu/festy/)
+
 ## 🌟 Features
 
 - 🛒 Browse and shop tickets for upcoming events
