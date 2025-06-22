@@ -22,7 +22,7 @@ Check out the live demo: [Insect-Betyár Live Demo](https://danielmarkus.web.elt
 - **React Router** – Seamless client-side navigation
 - **Axios** – API requests to backend endpoints
 
-### Backend (Assumed)
+### Backend 
 - **Node.js** & **Express.js**
 - **MariaDB** 
 
