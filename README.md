@@ -5,7 +5,7 @@
 
 ## 🌐 Live Demo
 
-Check out the live demo: [Insect-Betyár Live Demo](https://danielmarkus.web.elte.hu/festy/)
+Check out the live demo: [Live Demo](https://danielmarkus.web.elte.hu/festy/)
 
 ## 🌟 Features
 
